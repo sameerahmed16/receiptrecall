@@ -145,6 +145,7 @@ create or replace function match_category_correction(
 )
 returns table (corrected_category text, similarity float)
 language sql stable
+set search_path = public  -- pin search_path (security hardening)
 as $$
   select
     cc.corrected_category,
