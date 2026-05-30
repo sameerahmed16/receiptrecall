@@ -33,7 +33,7 @@ export function Dashboard() {
 
   return (
     <div className="space-y-6">
-      <RetroWindow title="dashboard.exe" titleBarColor="bg-sky">
+      <RetroWindow title="Dashboard" titleBarColor="bg-sky">
         <Hero data={data} loading={isLoading} empty={empty} />
       </RetroWindow>
 
@@ -45,10 +45,10 @@ export function Dashboard() {
         <>
           <StatCards data={data} loading={isLoading} />
           <div className="grid gap-6 lg:grid-cols-2">
-            <RetroWindow title="spending_by_category.chart" titleBarColor="bg-blush">
+            <RetroWindow title="Spending by category" titleBarColor="bg-blush">
               <CategoryPie data={data} loading={isLoading} />
             </RetroWindow>
-            <RetroWindow title="spending_over_time.chart" titleBarColor="bg-mint">
+            <RetroWindow title="Spending over time" titleBarColor="bg-mint">
               <TimeBar data={data} loading={isLoading} />
             </RetroWindow>
           </div>

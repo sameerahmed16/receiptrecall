@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 export function NotFound() {
   return (
     <div className="mx-auto max-w-lg">
-      <RetroWindow title="404.dlg" titleBarColor="bg-tomato">
+      <RetroWindow title="Page not found" titleBarColor="bg-tomato">
         <div className="grid place-items-center gap-4 py-10 text-center">
           <p className="font-display text-6xl font-extrabold text-hotpink bubble-shadow">
             404

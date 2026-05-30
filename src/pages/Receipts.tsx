@@ -17,7 +17,7 @@ export function Receipts() {
   const [openId, setOpenId] = useState<string | null>(null);
 
   return (
-    <RetroWindow title="receipts.db" titleBarColor="bg-butter">
+    <RetroWindow title="Receipts" titleBarColor="bg-butter">
       <div className="overflow-hidden rounded-lg border-[3px] border-ink">
         <div className="grid grid-cols-12 gap-2 border-b-[3px] border-ink bg-ink px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-white">
           <span className="col-span-5 sm:col-span-4">Merchant</span>

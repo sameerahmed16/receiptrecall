@@ -56,7 +56,7 @@ export function Login() {
         </div>
 
         <RetroWindow
-          title={mode === "signin" ? "login.exe" : "create_account.exe"}
+          title={mode === "signin" ? "Log in" : "Create account"}
           titleBarColor="bg-blush"
           icon={<Smiley className="h-5 w-5" />}
         >

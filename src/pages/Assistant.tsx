@@ -73,7 +73,7 @@ export function Assistant() {
   return (
     <div className="mx-auto max-w-2xl">
       <RetroWindow
-        title="chat_with_sameer.exe"
+        title="Chat with Sameer"
         titleBarColor="bg-hotpink"
         icon={<Smiley className="h-5 w-5" />}
         bodyClassName="p-0"

@@ -43,7 +43,7 @@ export function Subscriptions() {
 
   return (
     <div className="space-y-6">
-      <RetroWindow title="subscriptions.scan" titleBarColor="bg-lilac">
+      <RetroWindow title="Subscriptions" titleBarColor="bg-lilac">
         {/* Toolbar */}
         <div className="mb-4 flex items-center justify-between gap-2">
           <p className="font-mono text-[10px] uppercase tracking-widest text-ink/50">

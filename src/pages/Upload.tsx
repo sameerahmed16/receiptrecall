@@ -99,11 +99,11 @@ export function Upload() {
   }
 
   const titleByStage: Record<Stage, string> = {
-    idle: "upload_receipt.exe",
-    working: "reading…",
-    review: "review_receipt.exe",
-    saved: "saved!",
-    error: "error.dlg",
+    idle: "Upload a receipt",
+    working: "Reading…",
+    review: "Review receipt",
+    saved: "Saved!",
+    error: "Something went wrong",
   };
 
   return (
