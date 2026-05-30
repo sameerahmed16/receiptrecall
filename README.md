@@ -6,7 +6,19 @@ A personal spending tracker where the **input is a photo or screenshot, not manu
 
 Built on a fully modern stack (React + TypeScript + Supabase + Gemini) wearing a bright **Y2K / vaporwave-pop** skin — thick black outlines, hard offset shadows, candy + pastel colors, retro browser windows. Retro-pop skin, modern engine.
 
-> _Screenshots: add `docs/dashboard.png`, `docs/upload.png`, `docs/assistant.png` and embed them here._
+**Live demo:** [receiptrecall.vercel.app](https://receiptrecall.vercel.app)
+
+## Screenshots
+
+![Dashboard — spending overview with category pie, monthly trend, and an anomaly alert](docs/dashboard.png)
+
+| Sameer — the RAG assistant | Subscriptions — auto + manual |
+|---|---|
+| ![Chat with Sameer, grounded in real data](docs/assistant.png) | ![Detected and manually-added subscriptions](docs/subscriptions.png) |
+
+| Upload & extract | Receipts |
+|---|---|
+| ![Drag-and-drop receipt upload](docs/upload.png) | ![Receipts list](docs/receipts.png) |
 
 ---
 
