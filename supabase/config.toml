@@ -1,0 +1,13 @@
+# Supabase CLI project config.
+# project_id links local commands to your hosted project.
+project_id = "tusfvrwybedrxobxahhu"
+
+[functions.extract-receipt]
+# Require a valid Supabase user JWT — only signed-in users can call it.
+verify_jwt = true
+
+[functions.embed]
+verify_jwt = true
+
+[functions.chat]
+verify_jwt = true

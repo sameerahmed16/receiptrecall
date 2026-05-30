@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* ===========================================================================
+   ReceiptRecall design system — Y2K / vaporwave-pop tokens.
+   Retro-pop skin, modern engine. Defined once here, reused everywhere.
+   =========================================================================== */
+@theme {
+  /* Base + ink */
+  --color-cream: #fbf1e4;
+  --color-ink: #161616;
+
+  /* Pastel surfaces */
+  --color-blush: #ffc2e2;
+  --color-lilac: #c9a7ff;
+  --color-mint: #9be8c7;
+  --color-butter: #ffe57e;
+  --color-sky: #a9c9ff;
+
+  /* Bold accents */
+  --color-electric: #2563ff;
+  --color-tomato: #ff4b2b;
+  --color-sunshine: #ffc400;
+  --color-hotpink: #ff4fa3;
+
+  /* Fonts */
+  --font-display: "Baloo 2", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  /* Hard offset shadows (no blur) — the cut-out sticker feel */
+  --shadow-hard: 5px 5px 0 0 var(--color-ink);
+  --shadow-hard-sm: 3px 3px 0 0 var(--color-ink);
+  --shadow-hard-lg: 8px 8px 0 0 var(--color-ink);
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background-color: var(--color-cream);
+    /* faint grid + dot pattern overlay */
+    background-image:
+      linear-gradient(to right, rgba(22, 22, 22, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(22, 22, 22, 0.05) 1px, transparent 1px),
+      radial-gradient(rgba(22, 22, 22, 0.07) 1.2px, transparent 1.2px);
+    background-size:
+      28px 28px,
+      28px 28px,
+      28px 28px;
+    background-position:
+      0 0,
+      0 0,
+      14px 14px;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  /* Reusable sticker border + shadow */
+  .sticker {
+    @apply rounded-xl border-[3px] border-ink;
+    box-shadow: var(--shadow-hard);
+  }
+  .sticker-sm {
+    @apply rounded-lg border-[3px] border-ink;
+    box-shadow: var(--shadow-hard-sm);
+  }
+  .sticker-lg {
+    @apply rounded-2xl border-[3px] border-ink;
+    box-shadow: var(--shadow-hard-lg);
+  }
+
+  /* "Pressed" interaction: nudge toward the shadow */
+  .press {
+    @apply transition-all duration-100;
+  }
+  .press:hover {
+    transform: translate(2px, 2px);
+    box-shadow: var(--shadow-hard-sm);
+  }
+  .press:active {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 0 0 var(--color-ink);
+  }
+
+  /* 3D bubble text shadow for big headlines */
+  .bubble-shadow {
+    text-shadow:
+      3px 3px 0 var(--color-ink),
+      -1px -1px 0 var(--color-ink),
+      1px -1px 0 var(--color-ink),
+      -1px 1px 0 var(--color-ink);
+  }
+
+  .window-title {
+    @apply font-mono text-xs uppercase tracking-[0.18em];
+  }
+}
